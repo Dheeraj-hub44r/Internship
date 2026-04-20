@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pictorial Positioning</title>
+
+  <style>
+
+    body{
+      font-family: Arial;
+      margin:0;
+      padding:0;
+    }
+
+    
+    .navbar{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    
+    .space{
+      margin-top:60px;
+    }
+
+    
+    .img-box{
+      position: relative;
+      width: 250px;
+      height: 200px;
+      
+      margin: 30px;
+      border: 2px solid black;
+      
+    }
+
+    .img-box img{
+        width:100%;
+        height: 100%;
+        display:block;
+
+    }
+   
+
+    
+
+    
+    .badge{
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: red;
+      color: white;
+      padding: 5px;
+    }
+
+
+    .move{
+      position: static;
+      left: 30px;
+      top: 10px;
+      background: orange;
+      width: 120px;
+      padding: 5px;
+      margin: 20px;
+    }
+
+    
+    .free{
+      position: absolute;
+      top: 80px;
+      right: 10px;
+      background: green;
+      color: white;
+      padding: 5px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="navbar">Fixed Navbar</div>
+
+<div class="space">
+
+<h2>1. Relative + Absolute</h2>
+
+<div class="img-box">
+  Parent Box
+  <img src="/photos/IMG_20250621_212002_832.webp" alt="image">
+  <div class="badge">Badge</div>
+  
+  
+</div>
+
+
+
+<p style="margin-left:20px;">
+Badge is placed at top-right corner inside the parent box
+</p>
+
+
+<h2>2. Static</h2>
+
+<div class="move">Moved Box</div>
+
+<p style="margin-left:20px;">
+    default position
+
+</p>
+
+<h2>3. Absolute without Parent</h2>
+
+<p style="margin-left:20px;">
+Green box goes to top-right of page
+</p>
+
+<div class="free">Outside Box</div>
+
+</div>
+<h2>About html</h2>
+<p>Hypertext Markup Language (HTML) is the standard markup language[a] for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.<br>
+
+Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for its appearance.<br>
+
+HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes, and other items. HTML elements are delineated by tags, written using angle brackets. Other tags such as <p> and its corresponding closing tag </p> surround and provide information about document text and may include sub-element tags. Browsers do not display the HTML tags, but use them to interpret the content of the page.<br>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. The inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.[3] A form of HTML, known as HTML5, is used to display video and audio, primarily using the <canvas> element, together with JavaScript.</p>
+
+</body>
+</html>
