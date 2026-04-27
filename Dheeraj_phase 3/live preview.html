@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Live Preview</title>
+</head>
+<body>
+
+  <h2>Type Anything...</h2>
+  <input type="text" id="inputBox">
+
+  <p><b>Preview</b></p>
+   <p id="output"></p>
+ 
+
+  <script>
+    var input = document.getElementById("inputBox");
+    var output = document.getElementById("output");
+
+    input.addEventListener("input",live_preview)
+    
+    function live_preview(){
+      output.innerHTML = input.value;
+    };
+  </script>
+
+</body>
+</html>
