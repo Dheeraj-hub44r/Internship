@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Validation</title>
+</head>
+
+<body>
+
+  <h2>Login Form</h2>
+
+  <form id="loginForm">
+    Username:<br>
+    <input type="text" id="username"><br><br>
+
+    Password:<br>
+    <input type="password" id="password"><br><br>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script>
+    let form = document.getElementById("loginForm");   //accessing the elements
+    let username = document.getElementById("username");
+    let password = document.getElementById("password");
+    let message = document.getElementById("message");
+
+    form.addEventListener("submit", function(e) { // we place the function(e) inside the event to run the fucntion when the event is happens.
+                                                  //and if we use fucntion(e) iside the event, so we dont actually have to call the function atlast.
+
+      e.preventDefault(); //it stops the page from refreshing...
+
+      if(username.value === "" || password.value === "") {
+        message.innerHTML = "All fields are required!";
+      }
+      else if(password.value.length < 6) {
+        message.innerHTML = "Password must be at least 6 characters!";
+      }
+      else {
+        message.innerHTML = "Login successful!";
+      }
+
+    });
+  </script>
+
+</body>
+</html>
