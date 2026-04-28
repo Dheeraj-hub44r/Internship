@@ -26,6 +26,8 @@
 
       if(username.value === "" || password.value === "") {
         message.innerHTML = "All fields are required!";
+      }else if(password.value.lenght<6){
+        message.innerHTML="paasword must br at least 6 characters!";
       } else {
         message.innerHTML = "Login successful!";
       }
